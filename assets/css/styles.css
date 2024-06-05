@@ -1,0 +1,319 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-image: url("/assets/img/fondo.png");
+    background-size: cover;
+    background-attachment: fixed; /* Añadido para el efecto de paralaje */
+    background-position: center;
+}
+
+/* Estilos del header y navbar */
+header {
+    width: 100%;
+}
+
+.navbar {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    background-image: url("/assets/img/fondo.png"); /* Aplicar la misma imagen de fondo */
+    background-size: cover; /* Asegurar que la imagen cubra todo el fondo */
+    background-position: center; /* Centrar la imagen de fondo */
+    border: none; /* Eliminar cualquier borde predeterminado */
+    box-shadow: none; /* Eliminar cualquier sombra predeterminada */
+    backdrop-filter: blur(10px); /* Añadir un efecto de desenfoque de fondo */
+}
+
+.navbar-brand img {
+    height: 120px; /* Ajuste del tamaño del logo */
+    /* Nota: Para ajustar el tamaño del logo, cambia el valor de 'height' */
+}
+
+.nav-link {
+    font-weight: bold;
+    color: #000 !important;
+    margin: 0 20px; /* Agrega margen horizontal a los enlaces del menú */
+    font-size: 18px; /* Ajuste del tamaño del texto del menú */
+    /* Nota: Para ajustar el tamaño del texto del menú, cambia el valor de 'font-size' */
+    position: relative; /* Necesario para la línea debajo del texto */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajusta la posición de la línea */
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.navbar-toggler.custom-toggler {
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    border: 2px solid #343a40; /* Agrega un borde para que sea más visible */
+    padding: 0.5rem; /* Ajusta el tamaño del botón */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+}
+
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Personaliza el ícono de la hamburguesa */
+}
+
+
+.nav-link:hover {
+    color: #ca892e !important; /* Cambia el color del texto al pasar el mouse */
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); /* Expande la línea debajo del texto */
+}
+
+.navbar-nav {
+    align-items: center; /* Asegura que los items del menú estén alineados verticalmente */
+}
+
+.navbar-collapse {
+    justify-content: space-between; /* Espacia los elementos del menú */
+    border: none; /* Elimina cualquier borde en la colapsación del menú */
+    box-shadow: none; /* Elimina cualquier sombra en la colapsación del menú */
+}
+.navbar-collapse {
+    transition: height 0.3s ease;
+}
+
+
+/* Estilos para la sección principal */
+.principal h4 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #ca892f;
+    font-size: 30px;
+}
+
+.principal h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #3f2603;
+}
+
+.principal p {
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+    color: #3f2603;
+    font-size: 15px;
+    line-height: 1.6; /* Añadido para mejorar la legibilidad */
+}
+
+.principal .btn-outline-custom {
+    color: #3f2603;
+    border-color: #3f2603;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.principal .btn-outline-custom:hover {
+    color: #fff;
+    background-color: #3f2603;
+}
+
+/* Estilos para la sección de paralaje */
+.parallax-section {
+    background-image: url("/assets/img/bg-03.jpg"); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-attachment: fixed; /* Efecto de paralaje */
+    background-position: center;
+    position: relative;
+    color: #fff; /* Color del texto */
+    padding: 6.5%;
+}
+
+.parallax-section h1, .parallax-section h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 15px; /* Agrega margen a la izquierda */
+}
+
+.parallax-section h1 {
+    line-height: 1.3em; /* Ajusta la altura de línea */
+}
+
+.parallax-section h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.2em; /* Ajusta la altura de línea */
+}
+
+.parallax-section .btn-outline-dark {
+    color: #fff;
+    border-color: #fff;
+    margin-left: 15px; /* Agrega margen a la izquierda */
+}
+
+.parallax-section .btn-outline-dark:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilos para la sección de críticas */
+.estrellas {
+    background-image: url("/assets/img/bg-01.png"); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #3f2603;
+    padding: 6.5%;
+}
+
+.fa-star {
+    color: gold; /* Color de las estrellas */
+}
+
+.custom-criticas h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.custom-criticas h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.custom-criticas p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer h1 {
+    font-family: 'Birthstone Formal', cursive;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.subscribe-form input {
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+.subscribe-form button {
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+}
+
+.footer-menu a {
+    color: #343a40;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+    color: #3f2603;
+}
+
+.social-icons a {
+    color: #343a40;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.rights-reserved {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer h1 {
+    font-family: 'Birthstone Formal', cursive;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.subscribe-form input {
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+.subscribe-form button {
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    background-color: #3f2603;
+    color: #fff;
+    border: none;
+}
+
+.footer-menu a {
+    color: #343a40;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #343a40;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3f2603;
+}
+
+.rights-reserved {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .parallax-section h1 {
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin-left: 15px; /* Mantén el margen a la izquierda */
+        margin-top: 10px; /* Ajusta la posición superior */
+        line-height: 1.3em; /* Ajusta la altura de línea */
+    }
+
+    .parallax-section h2 {
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin-left: 15px; /* Mantén el margen a la izquierda */
+        margin-top: 20px; /* Ajusta la posición superior */
+        font-size: 24px;
+        line-height: 1.2em; /* Ajusta la altura de línea */
+    }
+
+    .parallax-section .btn-outline-dark {
+        margin-left: 15px; /* Mantén el margen a la izquierda */
+        display: block;
+        margin: 20px 15px; /* Ajusta el margen en pantallas pequeñas */
+    }
+}
