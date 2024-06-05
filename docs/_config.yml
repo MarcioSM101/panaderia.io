@@ -1,0 +1,14 @@
+theme: jekyll-theme-primer
+
+# Configuración del servidor de desarrollo
+port: 4000
+host: 0.0.0.0
+
+# Configuración de GitHub Pages
+github:
+  source:
+    branch: main
+    path: /docs
+
+
+
