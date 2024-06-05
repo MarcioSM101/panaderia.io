@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-    background-image: url("/assets/img/fondo.png");
+    background-image: url("/docs/assets/img/fondo.png");
     background-size: cover;
     background-attachment: fixed; /* Añadido para el efecto de paralaje */
     background-position: center;
@@ -17,7 +17,7 @@ header {
 .navbar {
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
-    background-image: url("/assets/img/fondo.png"); /* Aplicar la misma imagen de fondo */
+    background-image: url("/docs/assets/img/fondo.png"); /* Aplicar la misma imagen de fondo */
     background-size: cover; /* Asegurar que la imagen cubra todo el fondo */
     background-position: center; /* Centrar la imagen de fondo */
     border: none; /* Eliminar cualquier borde predeterminado */
@@ -60,7 +60,7 @@ header {
 }
 
 .navbar-toggler.custom-toggler .navbar-toggler-icon {
-    background-image: url("/assets/img/fondo.png");
+    background-image: url("/docs/assets/img/fondo.png");
     /* Personaliza el ícono de la hamburguesa */
 }
 
@@ -122,7 +122,7 @@ header {
 
 /* Estilos para la sección de paralaje */
 .parallax-section {
-    background-image: url("/assets/img/bg-03.jpg"); /* Ruta a tu imagen de fondo */
+    background-image: url("/docs/assets/img/bg-03.jpg"); /* Ruta a tu imagen de fondo */
     background-size: cover;
     background-attachment: fixed; /* Efecto de paralaje */
     background-position: center;
@@ -160,7 +160,7 @@ header {
 
 /* Estilos para la sección de críticas */
 .estrellas {
-    background-image: url("/assets/img/bg-01.png"); /* Ruta a tu imagen de fondo */
+    background-image: url("/docs/assets/img/bg-01.png"); /* Ruta a tu imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #3f2603;
